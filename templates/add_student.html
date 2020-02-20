@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Add a Student{% endblock %}
+
+{% block body %}
+  <form action="/student-add" method="POST" >
+    <p>
+      <label>Add a Student </label>
+      <input type="text" name="first" value='first'>
+      <input type="text" name="last" value='last'>
+      <input type="text" name="github" value='github'>
+    </p>
+    <input type="submit" value="Submit Search">
+  </form>
+{% endblock %}
